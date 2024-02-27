@@ -8,7 +8,7 @@
 Vidareutveckla tärnings-övningen
 Konstruktorn behöver inte ha någon parameter. Varje tärning ska ha 6 sidor.
 
-Klassen ska innehålla
+**Klassen ska innehålla**
 - Egenskaper
   * currentValue - startar på 1. 
   * isFrozen - boolean som startar på false
