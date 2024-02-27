@@ -1,0 +1,214 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+
+main{
+  padding: 5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+/*Min egen*/
+/* .diceContainer{
+  padding: 5%;
+  padding: 5px 5% 5px 5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-flow: row wrap;
+  align-items: center;
+  background-color: aliceblue;
+} */
+
+
+
+#diceContainerGrid, #contentContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:2fr 1fr;
+  padding:5%;
+  justify-content: center;
+  grid-auto-flow: column;
+  justify-content: stretch;  
+}
+
+/* #diceContainerGrid > div, #contentContainer > div{
+  width: 90%;
+} */
+
+
+
+/****** BUTTONS ****/
+
+
+.buttonContainer{
+  /* background-color: burlywood; */
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  /* background-color: chocolate; */
+  /* border: 1px solid #ccc; */
+  margin:1px;
+}
+
+button{
+  padding:5px;
+  margin:3px;
+  border:1px solid #ccc;
+  border-radius: 5px;
+}
+
+.frozen{
+  background-color: rgb(228, 255, 255) !important ;
+}
+
+.frozen div {
+  background: rgb(114, 114, 114) !important;
+}
+
+.unFrozen{
+  background-color:darkcyan;
+}
+
+/* .diceContainerButtons{
+  padding: 10px 5% 5px 5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  background-color:bisque;
+} */
+
+/*****DICE *****/
+
+.die{
+  padding: 6%;
+  margin:5%;
+  aspect-ratio: 1/1;
+  border-radius: 5%;
+  border: 2px solid gray;
+  background: hsl(40, 30%, 98%);
+  display: flex;
+  justify-content: center;
+}
+
+
+/* dots */
+.die div{
+  background: black;
+  border-radius: 50%;
+  width: 25%;
+  aspect-ratio: 1/1;
+}
+
+
+
+/* one */
+.one{
+  justify-content: center;
+  align-items: center;
+}
+
+/* two */
+.two{
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* three */
+.three{
+  justify-content: space-around;
+  align-items: center;
+}
+.three > :first-child{
+  align-self: flex-start;
+}
+.three > :last-child{
+  align-self: flex-end;
+}
+
+/* four */
+.four{
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-flow: row wrap;
+}
+.four > :first-child, .four > :nth-child(2){
+  align-self: flex-start;
+}
+.four > :first-child, .four > :nth-child(3){
+  margin-right: 50%;
+}
+
+/* five */
+.five{
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+.five > :first-child, .five > :nth-child(4){
+  margin-right: 50%;
+}
+.five > :nth-child(3){
+  margin: 0 37.5%;
+  justify-self: center;
+  align-self: center;
+}
+.five > :last-child, .five > :nth-child(4){
+  align-self: flex-end;
+}
+
+/* six */
+.six{
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+.six > :nth-child(2n+1){
+  margin-right: 50%;
+}
+.six > :nth-child(3), .six > :nth-child(4){
+  align-self: center;
+}
+.six > :nth-child(5), .six > :last-child{
+  align-self: flex-end;
+}
+
+
+
+
+
+
+
+/* .one {
+  grid-column: 1;
+  grid-row: 1 ;
+}
+.two {
+  grid-column: 2;
+  grid-row: 1 ;
+}
+.three {
+  grid-column: 3;
+  grid-row: 1 ;
+}
+.four {
+  grid-column: 4;
+  grid-row: 1 ;
+}
+.two {
+  grid-column: 2;
+  grid-row: 1 ;
+}
+.two {
+  grid-column: 2;
+  grid-row: 1 ;
+} */
